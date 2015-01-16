@@ -1,0 +1,9 @@
+beautifulsoup4
+requests
+numpy
+scipy
+sh
+python-nmap
+lxml
+h5py
+pyaudio

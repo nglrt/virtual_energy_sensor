@@ -1,5 +1,9 @@
 Virtual Energy Sensors
 ##########################
 
+Currently, this project is a big mess. However, we are currently cleaning
+up the sources to bring this project to a usable form. 
 
-Source Code will be added soon. Currently we are still cleaning up the code base...
+So, please be patient. 
+
+

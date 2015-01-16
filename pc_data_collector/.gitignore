@@ -1,0 +1,9 @@
+config.json
+clog
+log
+*~
+*.pyc
+*.pyo
+*.csv
+build
+dist
