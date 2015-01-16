@@ -51,17 +51,12 @@ regressor=Regressor()
 
 
 """Trainigsdaten laden"""
-<<<<<<< HEAD:exp3_longterm/createRegressor.py
+
 trainPowerData, trainFeatureData=loader.load_dir('train_pl_monitor')
 
 """Testdaten laden"""
 testPowerData, testFeatureData = loader.load_dir('test_pl_monitor')
-=======
-trainPowerData, trainFeatureData=loader.load_dir('train_fe')
 
-"""Testdaten laden"""
-testPowerData, testFeatureData = loader.load_dir('test_fe')
->>>>>>> d0a00ffb888c82ef5656498123b981637318ddf9:data_analysis/createRegressor.py
 
 
 selection_idx = np.where(testPowerData > 24)
@@ -98,7 +93,7 @@ Aufpassen, allSensorCombination bestimmt den besten Regressor mit der errror_fun
 Verlauf, OHNE den fehler für alle XX sekunden zu berechnen und zu mitteln
 '''
 
-<<<<<<< HEAD:exp3_longterm/createRegressor.py
+
 error_func = mean_squared_error
 resultArray, resultTuple = bestRegressor.allSensorCombinations\
 (filteredTrainFeatureData, filteredTrainPowerData,filteredTestFeatureData,filteredTestPowerData, error_func)
@@ -107,10 +102,6 @@ resultArray, resultTuple = bestRegressor.allSensorCombinations\
 #resultTuple = (3,int('1111111', 2))
 
 
-=======
-resultTuple = (3,112)
-#resultTuple = (7,int('1011111', 2))
->>>>>>> d0a00ffb888c82ef5656498123b981637318ddf9:data_analysis/createRegressor.py
 
 regressor.printResult(resultTuple)
 #bestRegressor.saveRegressor(resultTuple, filteredTrainFeatureData, filteredTrainPowerData)
